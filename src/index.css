@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+@layer utilities {
+
+  .legend {
+    @apply font-bold my-1
+  }
+
+  .value {
+    @apply text-gray-400
+  }
+}
