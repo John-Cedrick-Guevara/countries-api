@@ -104,6 +104,14 @@ function App() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
+          {search !== "" ? (
+            <span
+              className="bg-gray-200 px-2 rounded-full cursor-pointer h-fit"
+              onClick={() => setSearch("")}
+            >
+              x
+            </span>
+          ) : null}
         </div>
 
         {/* filter by region select element */}
